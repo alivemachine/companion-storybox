@@ -1,7 +1,7 @@
 {
     "hosting": [
         {
-            "target": "companion-web-stage",
+            "target": "storybots-stage",
             "public": "./out",
             "rewrites": [
                 {

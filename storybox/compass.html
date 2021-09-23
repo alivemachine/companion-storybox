@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Avatar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta itemprop="image" content="screenshot.png">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link rel="stylesheet" href="./scripts/botui.min.css" />
+    <link rel="stylesheet" href="./scripts/botui-theme-default.css" />
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://unpkg.com/botui/build/botui.js"></script>
+    <script src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="scene">
+
+     <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
+
+
+        <div id="chatContainer">
+            <div id="chat">
+              <bot-ui></bot-ui>
+            </div>
+        </div>
+        <div id="controlPanel">
+            <form id="ent1memory">
+                <label id="ent1memlabel" for="ent1mem">Name</label><textarea class="ent1" id="ent1mem" name="ent1mem" disabled></textarea></br>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+    var botui = new BotUI('chat');
+    botui.message.add({
+      photo: 'https://moin.im/face.svg',
+      loading: true
+    }).then(function (index) {
+      setTimeout(function () {
+        botui.message.update(index, {
+          content: 'Hello World from bot!',
+          loading: false
+        }).then(function () {
+          botui.message.add({
+            delay: 2000,
+            //loading: true,
+            photo: true,
+            photo: 'https://moin.im/face.svg',
+            content: 'Delayed Hello World',
+            attributes: { 'aria-label': 'Delayed Hello World' },
+          });
+        });
+      }, 5000);
+    });
+
+    botui.message.add({
+      human: true,
+      photo: false,
+      content: 'Hello World from human!'
+    }).then(function () {
+      botui.action.select({
+        action: {
+            placeholder : "Select Language",
+            value: 'TR,EN', // Selected value or Selected Array object. Example: [{value: "TR", text : "Türkçe" },{value: "EN", text : "English" }]
+            multipleselect : true, // Default: false
+            options : [
+              {value: "EN", text : "English" },
+              {value: "ES", text : "Español" },
+              {value: "TR", text : "Türkçe" },
+              {value: "DE", text : "Deutsch" },
+              {value: "FR", text : "Français" },
+              {value: "IT", text : "Italiano" },
+            ],
+            button: {
+              icon: 'check',
+              label: 'OK'
+            }
+          }
+      }).then(function (res) {
+        console.log(res.value);
+      });
+    });
+  </script>
+      <libs/>
+    <script type="text/javascript" src="avatar_js/patch.js" async></script>
+    <corelibs/>
+
+    <script>
+
+        // disable rubberband effect on mobile devices
+        document.getElementById('glcanvas').addEventListener('touchmove', (e)=>{ e.preventDefault(); }, false);
+
+
+        function patchInitialized(patch) {
+            // You can now access the patch object (patch), register variable watchers and so on
+        }
+
+        function patchFinishedLoading(patch) {
+            // The patch is ready now, all assets have been loaded
+            //CABLES.patch.setVariable("name","Maslo");
+
+        }
+
+
+        document.addEventListener('CABLES.jsLoaded', function (event) {
+            CABLES.patch = new CABLES.Patch({
+                patch: CABLES.exportedPatch,
+                prefixAssetPath: '',
+                glCanvasId: 'glcanvas',
+                glCanvasResizeToWindow: true,
+                onPatchLoaded: patchInitialized,
+                onFinishedLoading: patchFinishedLoading,allowLocalFileAccess:true,canvas:{"alpha":true}
+            });
+            CABLES.patch.config.loaded = function(parameters) {
+                document.getElementById('glcanvas').style.opacity=1;
+            };
+            CABLES.patch.config.previewMemory = function(parameters) {
+                document.getElementById('ent1memory').style.display="block";
+                document.getElementById('ent1mem').value=parameters[0].split(': ')[1];
+                document.getElementById('ent1memlabel').innerHTML=parameters[0].split(': ')[0];
+                
+            };
+            CABLES.patch.config.enterMemory = function(parameters) {
+                window.location.href = 'scene.html?entity1='+whoareyou+'&entity2='+parameters[0];
+            };
+        });
+
+        
+       
+    </script>
+  </body>
+</html>

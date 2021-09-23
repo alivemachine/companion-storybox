@@ -7,9 +7,10 @@
   align-items: center;
   width: 400px;
   margin: 0 auto;
-  transition: all 3s ease-out;
-  transform: scale(.8);
-
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)scale(.8);pointer-events: none;
   &.persona-position-100 {
     transition: width 600ms ease-out, height 600ms ease-out;
     height: 100vh;

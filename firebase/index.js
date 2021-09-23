@@ -2,6 +2,7 @@ import firebase from 'firebase';
 import 'firebase/auth';
 import 'firebase/app';
 
+
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
   authDomain: process.env.AUTHDOMAIN,
@@ -18,7 +19,7 @@ const firebaseConfig = {
 const bootstrap = () => {
   if (firebase.apps.length === 0) {
     firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+
     firebase.auth();
   }
 };

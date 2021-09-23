@@ -11,8 +11,9 @@ import WavesComponent from '../components/WavesComponent';
 import ChatViewModel from '../viewModels/ChatViewModel';
 import PersonaViewModel from '../viewModels/PersonaViewModel';
 import LogoComponent from '../components/LogoComponent';
-// import PaiperComponent from '../components/PaiperComponent';
-// import messageFromChatInput from '../components/ChatInputComponent';
+import PaiperComponent from '../components/PaiperComponent';
+import MapComponent from '../components/MapComponent';
+import messageFromChatInput from '../components/ChatInputComponent';
 import AccessViewModel from '../viewModels/accessViewModel';
 import LoginFormComponent from '../components/LoginFormComponent';
 import SignupFormComponent from '../components/SignupFormComponent';
@@ -51,7 +52,9 @@ export class Home extends React.Component {
   render() {
     return (
       <div>
+      <MapComponent />
         <BackgroundComponent />
+        
         <WavesComponent />
         <LogoComponent />
         <Header infoModules={this.chatViewModel.showInformationModule} />
@@ -66,7 +69,7 @@ export class Home extends React.Component {
             <ChatComponent
               infoModules={this.chatViewModel.showInformationModule}
             />
-            {/* <PaiperComponent messageFromPaiper={messageFromChatInput} /> */}
+            { <PaiperComponent messageFromPaiper={messageFromChatInput} /> }
             {this.chatViewModel.showInformationModule && (
               <InfoModulesWrapper
                 submodule={this.chatViewModel.submoduleSelected}>

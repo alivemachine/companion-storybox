@@ -22,7 +22,6 @@ export default class PaiperComponent extends React.Component {
     var temp = messageFromBot;
     function listenToBot() {
       if (messageFromBot != temp) {
-        CABLES.patch.setVariable('probe', messageFromBot);
         temp = messageFromBot;
       }
       setTimeout(function () {

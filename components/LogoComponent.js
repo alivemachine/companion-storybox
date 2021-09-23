@@ -3,7 +3,7 @@ import React from 'react';
 export const LogoComponent = () => {
   return (
     <div id="logo">
-      maslo |{' '}
+      storybox |{' '}
       <a href="mailto:sayhi@maslo.ai">
         <svg
           width="18px"

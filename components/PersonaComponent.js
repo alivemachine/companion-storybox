@@ -26,6 +26,9 @@ export class PersonaComponent extends React.Component {
       this.persona.dispose();
     }
     this.updatePersonaPosition();
+    document.getElementById('persona').style.display='none';
+    document.getElementById('chat').style.display='none';
+
   }
 
   loadPersona(element) {

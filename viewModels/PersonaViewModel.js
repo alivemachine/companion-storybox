@@ -37,8 +37,9 @@ function updatetheme() {
 
 export class PersonaViewModel {
   @observable _persona = null;
-
+  
   run(element) {
+  
     this._persona = new Persona({
       element: element.current,
       size: 500,

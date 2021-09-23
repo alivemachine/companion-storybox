@@ -5,8 +5,8 @@
   "targets": {
     "maslo-377f0": {
       "hosting": {
-        "companion-web-stage": [
-          "companion-web-4a44a"
+        "storybots-stage": [
+          "storybots"
         ]
       }
     }

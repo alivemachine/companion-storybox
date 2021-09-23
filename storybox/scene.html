@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simulator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta itemprop="image" content="screenshot.png">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link rel="stylesheet" href="./scripts/botui.min.css" />
+    <link rel="stylesheet" href="./scripts/botui-theme-default.css" />
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="./scripts/botui.min.js"></script>
+    <script src="./scripts/speechSynthesis.js"></script>
+    <link rel="stylesheet" href="style.css">
+        <script src="./scripts/main.js"></script>
+    
+
+    
+  </head>
+  <body>
+    <div id="scene">
+
+     <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
+
+
+        <div id="chatContainer">
+            <div id="chat">
+              <bot-ui></bot-ui>
+            </div>
+        </div>
+        <div id="controlPanel">
+            <form id="Scene">
+                <input type="button" id="back" name="back" value="←" onClick="window.location.href = 'map.html'">
+                <input type="button" id="play" name="play" value="▶" onClick="playbtn()">
+                <input type="button" id="sound" name="sound" value="🔇" onClick="soundbtn()"></br>
+                <label for="environment">Environment:</label>
+                <select id="environment" name="environment">
+                    <option value="dungeon">Dungeon</option>
+                    <option value="artsalon">Art Salon</option>
+                    <option value="space">Space</option>
+                    <option value="generative">Generative</option>
+                </select></br></br>
+                <h2 id="info"><img class="loadIcon" src="https://i.gifer.com/ZZ5H.gif"/> Loading community...</h2>
+            </form>
+            <form id="ent1control">
+                <img id="formPortrait1" class="formPortrait" src=""></br>
+                <label for="entity1">Entity 1</label>
+                <select class="ent1" onchange="loadCompass()" id="entity1" name="entity1">
+                </select>
+                <label for="ent1color">Color</label><input class="ent1" type="color" id="ent1color" name="ent1color" value="#e66465"></br>
+                <label for="ent1img">Portrait</label><input class="ent1" type="url" name="ent1img" id="ent1img" onchange="portraitDisplay()">
+                <label for="ent1desc">Personality</label><textarea class="ent1" id="ent1desc" name="ent1desc" type="text"></textarea>
+                <label for="ent1endear">Terms of Endearments</label><textarea class="ent1" id="ent1endear" name="ent1endear" type="text"></textarea>
+                <label for="ent1greet">Greetings</label><textarea class="ent1" id="ent1greet" name="ent1greet" type="text"></textarea>
+                <label for="ent1interests">Interests</label><textarea class="ent1" id="ent1interests" name="ent1interests" type="text"></textarea>
+                <label for="ent1voice">Voice</label><input type="number" class="ent1" id="ent1voice" name="ent1voice" min="0" max="100">
+                <label for="ent1pitch">Pitch</label><input type="number" class="ent1" id="ent1pitch" name="ent1pitch" min="0" max="2">
+                <label for="ent1rate">Rate</label><input type="number" class="ent1" id="ent1rate" name="ent1rate" min="0.1" max="10">
+                <label for="ent1save">Save</label><input class="ent1" type="button" id="ent1save" name="ent1save" value="🖫" onClick="entsave(1)">
+            </form>
+            <form id="ent2control">
+                <img id="formPortrait2" class="formPortrait" src=""></br>
+                <label for="entity2">Entity 2</label>
+                <select class="ent2" onchange="loadCompass()" id="entity2" name="entity2">
+                </select>
+                <label for="ent2color">Color</label><input class="ent2" type="color" id="ent2color" name="ent2color" value="#e66465"></br>
+                <label for="ent2img">Portrait</label><input class="ent2" type="url" name="ent2img" id="ent2img" onchange="portraitDisplay()">
+                <label for="ent2desc">Personality</label><textarea class="ent2" id="ent2desc" name="ent2desc" type="text"></textarea>
+                <label for="ent2endear">Terms of Endearments</label><textarea class="ent2" id="ent2endear" name="ent2endear" type="text"></textarea>
+                <label for="ent2greet">Greetings</label><textarea class="ent2" id="ent2greet" name="ent2greet" type="text"></textarea>
+                <label for="ent2interests">Interests</label><textarea class="ent2" id="ent2interests" name="ent2interests" type="text"></textarea>
+
+                <label for="ent2voice">Voice</label><input type="number" class="ent2" id="ent2voice" name="ent2voice" min="0" max="100">
+                <label for="ent2pitch">Pitch</label><input type="number" class="ent2" id="ent2pitch" name="ent2pitch" min="0" max="2">
+                <label for="ent2rate">Rate</label><input type="number" class="ent2" id="ent2rate" name="ent2rate" min="0.1" max="10">
+                <label for="ent2save">Save</label><input class="ent2" type="button" id="ent2save" name="ent2save" value="🖫" onClick="entsave(2)">
+            </form>
+        </div>
+    </div>
+    
+    <script>
+    var botui = new BotUI('chat');
+    
+  </script>
+      <libs/>
+    <script type="text/javascript" src="scene_js/patch.js" async></script>
+    <corelibs/>
+
+    <script>
+
+        // disable rubberband effect on mobile devices
+        document.getElementById('glcanvas').addEventListener('touchmove', (e)=>{ e.preventDefault(); }, false);
+
+
+        function patchInitialized(patch) {
+            // You can now access the patch object (patch), register variable watchers and so on
+        }
+        var capturedPatch;
+        function patchFinishedLoading(patch) {
+            capturedPatch=patch;
+            document.getElementById('glcanvas').style.opacity=1;
+            // The patch is ready now, all assets have been loaded
+            setPatchVar("color1","#000000");
+            setPatchVar("color2","#000000");
+            setPatchVar("color3","#000000");
+            
+        }
+        
+        function setPatchVar(vari,val){
+            capturedPatch.setVariable(vari,val);
+        }
+
+        document.addEventListener('CABLES.jsLoaded', function (event) {
+            CABLES.patch = new CABLES.Patch({
+                patch: CABLES.exportedPatch,
+                prefixAssetPath: '',
+                glCanvasId: 'glcanvas',
+                glCanvasResizeToWindow: true,
+                onPatchLoaded: patchInitialized,
+                onFinishedLoading: patchFinishedLoading,allowLocalFileAccess:true
+            });
+
+
+        });
+
+        
+       
+    </script>
+  </body>
+</html>

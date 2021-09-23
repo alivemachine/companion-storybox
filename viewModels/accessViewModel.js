@@ -69,7 +69,7 @@ export class AccessViewModel {
 
     try {
       const result = await login(this._user.username, this._user.password);
-      localStorage.setItem(USER_KEY, result.user.uid);
+      localStorage.setItem(USER_KEY, result.uid);
 		
 ReactGA.set({
   userId: USER_KEY,
@@ -109,7 +109,7 @@ ReactGA.set({
 
     try {
       const result = await signup(this._user.username, this._user.password);
-      localStorage.setItem(USER_KEY, result.user.uid);
+      localStorage.setItem(USER_KEY, result.uid);
 
       window.location.reload();
     } catch (e) {

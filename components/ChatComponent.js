@@ -29,6 +29,7 @@ export default class ChatComponent extends React.Component {
 
   render() {
     let newPosition = '';
+    
     if (this.props.infoModules) {
       newPosition = ' move-top';
     }
