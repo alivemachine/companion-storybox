@@ -39,7 +39,7 @@ Companions as they are solicited and trained by humans end up making the link be
 - Integrate Simulator / Trainer
 - Replace Storymapr by automated training and work environment to develop more performant memory recall solution
 - Maslo Studio / Creator for companion deployment and service accessiblity
-- General UX research for the complete Maslo Land Experience
+- General architecture and UX research for the complete Maslo Land Experience
 
 ### 3 levels
 
