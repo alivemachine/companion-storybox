@@ -30,7 +30,7 @@ Each Companion can be a user or self-activated: humans and AIs are undifferentia
 Individual human behavior and Community behavior are interlocked. One cannot be understood without observing the other.
 The UX is here to allow the manipulation of a large dataset and its visualization at varied scale.
 Companions as they are solicited and trained by humans end up making the link between humans and the growing complexity of the virtual world and the ocean of information.
-Companions exist accross platforms and accross signal sources. They can be reached out any where humans are.
+Companions exist across platforms and across signal sources. They can be reached out any where humans are.
 
 ## Focus
 
