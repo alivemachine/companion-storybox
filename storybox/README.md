@@ -49,7 +49,7 @@ Companions as they are solicited and trained by humans end up making the link be
 
 - The Compass (or the Avatar)
 
----------------> Program your companion
+---------------> Program and deploy your companion
 
 - The Simulator (or the Scene)
 
