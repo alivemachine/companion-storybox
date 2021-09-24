@@ -27,7 +27,7 @@ By repetition they create a trail map, an echo.
 Each memory gets recalled every time and inform the way the Companion will fire the next time.
 Companions can be trained by humans or by other companions.
 Each Companion can be a user or self-activated: humans and AIs are undifferentiated.
-Individual human behavior and Community behavior is interlocked. One cannot be understood without observing the other.
+Individual human behavior and Community behavior are interlocked. One cannot be understood without observing the other.
 The UX is here to allow the manipulation of a large dataset and its visualization at varied scale.
 Companions as they are solicited and trained by humans end up making the link between humans and the growing complexity of the virtual world and the ocean of information.
 Companions exist accross platforms and accross signal sources. They can be reached out any where humans are.
@@ -40,6 +40,7 @@ Companions exist accross platforms and accross signal sources. They can be reach
 - Integrate Simulator / Trainer
 - Replace Storymapr by automated training and work environment to develop more performant memory recall solution
 - Maslo Studio / Creator for companion deployment and service accessiblity
+- Experiment on generative storytelling for 3D media entertainment (animations and video games)
 - General architecture, UX research and Roadmap for the complete Maslo Land Experience
 
 ### 3 levels
@@ -114,6 +115,7 @@ To-do:
 for situational awareness.
 - Plug in all input accesses from the Compass/Avatar.
 - Develop deployment router for `Hero`, `SMS`, `Slack`,`Apple`,`Android`...
+- Add Open AI's Codex for custom algorithm training, see [Hello World](https://github.com/alivemachine/openai-codex-hello-world)
 
 ## data storage
 
@@ -253,6 +255,7 @@ To-do
 - Import previous chat History
 - Pursue previous conversation in a different parallel way
 - Develop XR immersive access with the Companions
+- Develop Unreal entertainment cloud deployment with [Elektrashock](https://www.elektrashock.com/)
 
 ## More Documentation
 
