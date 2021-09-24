@@ -1,5 +1,7 @@
 ﻿# Storybox
 
+![alt text](screenshot.png)
+
 - I live here: [storybots.web.app](https://storybots.web.app/)
 - Video exploration [youtube.com]()
 - Wolfram cloud notebook: [wolframcloud.com/env/madelaine0/storybox.nb](https://www.wolframcloud.com/env/madelaine0/storybox.nb)
@@ -46,7 +48,7 @@ Train your companion
 
 ## Onboarding
 
-![alt text](screenshot.png)
+![alt text](screenshot_onboarding.png)
 
 When the user first write its name, either a new companion is created or an existing one is retrieved. This companion will be used as the user when interacting with other companions or users.
 The user can then experience talking with other companion in the skin of their companion. This will affect the behavior the companion as it resonates in the future.
