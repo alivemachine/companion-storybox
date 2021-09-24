@@ -30,7 +30,16 @@ Each Companion can be a user or self-activated: humans and AIs are undifferentia
 Individual human behavior and Community behavior is interlocked. One cannot be understood without observing the other.
 The UX is here to allow the manipulation of a large dataset and its visualization at varied scale.
 Companions as they are solicited and trained by humans end up making the link between humans and the growing complexity of the virtual world and the ocean of information.
-The platform has for goal to explore multi-ways conversations between algorithms and humans.
+
+## Focus
+
+- Develop multi-way conversations between algorithms and humans (Rooms).
+- Integrate Avatar Kit
+- Integrate Control Panel
+- Integrate Simulator / Trainer
+- Replace Storymapr by automated training and work environment to develop more performant memory recall solution
+- Maslo Studio / Creator for companion deployment and service accessiblity
+- General UX research for the complete Maslo Land Experience
 
 ### 3 levels
 
@@ -242,6 +251,7 @@ To-do
 - Inject messages into the conversation
 - Import previous chat History
 - Pursue previous conversation in a different parallel way
+- Develop XR immersive access with the Companions
 
 ## More Documentation
 
