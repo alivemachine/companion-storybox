@@ -3,7 +3,7 @@
 ![alt text](screenshot.png)
 
 - I live here: [storybots.web.app](https://storybots.web.app/)
-- Video exploration [youtube.com]()
+- Video exploration [youtube.com](https://youtu.be/cVkNHnfSTqw)
 - Wolfram cloud notebook: [wolframcloud.com/env/madelaine0/storybox.nb](https://www.wolframcloud.com/env/madelaine0/storybox.nb)
 - Companion-web: [github.com/HeyMaslo/companion-web](https://github.com/HeyMaslo/companion-web)
 - Research: [alivemachine.io](https://alivemachine.io/)
