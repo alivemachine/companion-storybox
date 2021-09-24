@@ -1,6 +1,7 @@
 ﻿# Storybox
 
 - I live here: [storybots.web.app](https://storybots.web.app/)
+- Video exploration [youtube.com]()
 - Wolfram cloud notebook: [wolframcloud.com/env/madelaine0/storybox.nb](https://www.wolframcloud.com/env/madelaine0/storybox.nb)
 - Companion-web: [github.com/HeyMaslo/companion-web](https://github.com/HeyMaslo/companion-web)
 - Research: [alivemachine.io](https://alivemachine.io/)
@@ -27,15 +28,20 @@ Each Companion can be a user or self-activated: humans and AIs are undifferentia
 Individual human behavior and Community behavior is interlocked. One cannot be understood without observing the other.
 The UX is here to allow the manipulation of a large dataset and its visualization at varied scale.
 Companions as they are solicited and trained by humans end up making the link between humans and the growing complexity of the virtual world and the ocean of information.
-
+The platform has for goal to explore multi-ways conversations between algorithms and humans.
 
 ### 3 levels
 
 - The Map
+
 Visualize all companions
+
 - The Compass (or the Avatar)
+
 Program your companion
+
 - The Simulator (or the Scene)
+
 Train your companion
 
 ## Onboarding
@@ -51,9 +57,10 @@ Notebook: [wolframcloud.com/env/madelaine0/storybox.nb](https://www.wolframcloud
 
 ### Features:
 
-- allows to create plotting and graphics.
+- allows to create 3D plotting and graphics
 - can be deployed at scale on AWS.
 - fast and easy computation.
+- central place for services and custom research and development
 - algorithm current developed with open-ai's GPT-3 but can be expanded with other machine learning type behaviors and other.
 
 ### Main Functions:
@@ -148,19 +155,7 @@ The beings:
 ```
 The maps:
 
-```
-Timestamp=Thu 23 Sep 2021 22:39:08 GMT +0	
-names=Maslo Erika Cleopatra Bernard Jean Adam Anyone Samy darnell Maurice Mario null Lightning Madds Ross	
-sizes=163714254130781877140518809112748491180610959136589353520	
-personalityList= is a character that is very dependent on the situation and the people around him. If he feels safe and supported by those around him, Maslo will be a is an interesting woman, who does stuff. has a great sense of humor and is always fun to be with. She is funny and witty and knows how to make you feel good about yourself.Cle is a rather cheerful and well-educated robot in comparison to this other two companions. He thinks in a civilized and careful way and is very studious, in is a caring and thoughtful individual who is always looking for the best in people. She's not afraid to challenge preconceived notions of traditional gender roles, often taking is well-behaved, kind, thoughtful, sensitive, shy, creative, determined, hardworking, selfless, devout, intellectual, studious, responsible that plays a good amount of Gintama will be able to recognize this person. Here's a hint: He has a white mustache and always wears a white is a lovable child. He is a mature and understand person and accepts the reality so easily. He never ever uses foul words and treats everyone equally and politely is very kind,friendly,smart person.He has,his own business called "darnell's animal repair".is a jolly and outgoing friend who will do anything for his friends and his girlfriend. He is famous for his large appetite and love for food. Maurice loves is very strong-willed, courageous, enthusiastic, athletic, and is sometimes even cocky. As the hero of the story Mario has a great sense ofdescription is like the element of lightning itself. Impatient, obnoxious, and hotheaded. She is headstrong, impulsive, extremely short tempered, extremely proud, is calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm calm is a good natured guy who always tries to help others. He often lets his willingness to help others get the better of him. Ross is a sensitive guy	
-portraitList=https://www.dropbox.com/s/rozc5qc9yk0r8hm/wolframSaved%20%28161%29.png?dl=1https://d279m997dpfwgl.cloudfront.net/wp/2016/06/1101_lantz-600x600.jpghttps://www.dropbox.com/s/lxvrdbj62lsdvhw/wolframSaved%20%28163%29.png?dl=1https://www.dropbox.com/s/iivp7z6i8fxih55/wolframSaved%20%28164%29.png?dl=1https://www.dropbox.com/s/fd9l1v4ubd8wcv6/wolframSaved%20%28165%29.png?dl=1https://www.dropbox.com/s/9cge3l8qm4gi3ij/wolframSaved%20%28166%29.png?dl=1https://www.dropbox.com/s/86npcbtx353nlf6/wolframSaved%20%28167%29.png?dl=1https://www.dropbox.com/s/zfhkicpp6pbqwas/wolframSaved (168).png?dl=1https://www.dropbox.com/s/rtvbxq0shx4n56w/wolframSaved%20%28169%29.png?dl=1https://m.media-amazon.com/images/M/MV5BZDg2NjFiMjQtNTM2Ny00Y2YyLTgyMTItZjU3NWJkNDdlNDg2XkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpghttps://www.dropbox.com/s/249k5egp74jaq44/wolframSaved%20%28171%29.png?dl=1portraithttps://www.dropbox.com/s/mjqvyfh3i6sogix/wolframSaved%20%28172%29.png?dl=1https://www.dropbox.com/s/quii4msin212nag/wolframSaved%20%28173%29.png?dl=1https://www.dropbox.com/s/h2eifvsm0jmdagn/wolframSaved%20%28174%29.png?dl=1	
-length=15	
-colors=0.9019610.3921570.39607811.00.00.50196111.00.5019610.010.00.00.62745110.00.5019610.011.00.00.010.5019610.5019610.75294110.5019610.00.2509810.9843140.40.094117610.250980.5019610.50196110.450980.674510.41960810.00.00.010.5019611.01.010.1725490.7137250.26274510.6941180.07058820.8431371
-...
-...
-...
-*n
-```
+![alt text](screenshot_datadrop_maps.png)
 
 The images are saved in Dropbox, then link created is saved in Wolfram Datadrop.
 
@@ -240,10 +235,21 @@ Features:
 ![alt text](screenshot_simulator_code.png)
 
 To-do
+- Allow Room conversation (3 and more entities)
 - Implement new environments
 - Inject messages into the conversation
 - Import previous chat History
 - Pursue previous conversation in a different parallel way
+
+## More Documentation
+
+- [Google Doc - Orage into maslo hero and what can we learn from a society wide behavioral simulation](https://docs.google.com/presentation/d/1AxhFiyHz6XPHSGqYEcOjJPmi5uOydcDepvYWzMbQmqg/view)
+- [Medium - Empathetic and Behavioral Design with AI at maslo](https://medium.com/maslo/empathetic-and-behavioral-design-with-ai-at-maslo-fb58c61a7ad4)
+- [Medium - Behavioral design with GPT-3](https://medium.com/maslo/behavioral-design-with-gpt-3-af703d6c1a3b)
+- [javascript - The Avatar](https://alivemachine.io/avatar04/)
+- [javascript - Dibo Market fluidifier](https://alivemachine.io/Dibo02/)
+
+
 
 ## Certificate of Computational Birth
 
