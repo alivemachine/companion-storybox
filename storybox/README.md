@@ -22,7 +22,7 @@ This network is aimed to be molded onto the exisiting social networks of humans 
 Here we create a platform of existing algorithms accessible by API mostly. 
 Algorithms can be piped, switched, tracked, triggered at will. 
 Each combination is a map with a Name: a COMPANION. 
-As they get fired in different ways, they save traces of their behaviors (memories). 
+As they get fired in different ways, they save traces of their behaviors `memories`. 
 By repetition they create a trail map, an echo.
 Each memory gets recalled every time and inform the way the Companion will fire the next time.
 Companions can be trained by humans or by other companions.
@@ -30,6 +30,7 @@ Each Companion can be a user or self-activated: humans and AIs are undifferentia
 Individual human behavior and Community behavior is interlocked. One cannot be understood without observing the other.
 The UX is here to allow the manipulation of a large dataset and its visualization at varied scale.
 Companions as they are solicited and trained by humans end up making the link between humans and the growing complexity of the virtual world and the ocean of information.
+Companions exist accross platforms and accross signal sources. They can be reached out any where humans are.
 
 ## Focus
 
@@ -39,7 +40,7 @@ Companions as they are solicited and trained by humans end up making the link be
 - Integrate Simulator / Trainer
 - Replace Storymapr by automated training and work environment to develop more performant memory recall solution
 - Maslo Studio / Creator for companion deployment and service accessiblity
-- General architecture and UX research for the complete Maslo Land Experience
+- General architecture, UX research and Roadmap for the complete Maslo Land Experience
 
 ### 3 levels
 
