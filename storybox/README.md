@@ -45,15 +45,15 @@ Companions as they are solicited and trained by humans end up making the link be
 
 - The Map
 
-Visualize all companions
+---------------> Visualize all companions
 
 - The Compass (or the Avatar)
 
-Program your companion
+---------------> Program your companion
 
 - The Simulator (or the Scene)
 
-Train your companion
+---------------> Train your companion
 
 ## Onboarding
 
