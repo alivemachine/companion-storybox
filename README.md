@@ -1,9 +1,8 @@
 # Maslo
 
 Welcome to my repository!
-- I live here: [talktome.maslo.ai/](https://talktome.maslo.ai/)
-- My conversational tree is here: [beta.storymapr.com/dialogue_trees/5febdca151bc6f194a77a2f5/workbench](https://beta.storymapr.com/dialogue_trees/5febdca151bc6f194a77a2f5/workbench)
-- My Github is here: [github.com/HeyMaslo/companion-web](https://github.com/HeyMaslo/companion-web)
+- I live here: [storybots.web.app/](https://storybots.web.app/)
+- Companion-web: [github.com/HeyMaslo/companion-web](https://github.com/HeyMaslo/companion-web)
 
 ![alt text](screenshot.png)
 
